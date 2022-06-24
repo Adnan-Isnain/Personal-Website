@@ -1,20 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="public/styles.css">
-    <meta charset="utf-8">
-    <title>My Page</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Curriculum Vitae</title>
 </head>
 
 <body id="root">
-    <div class="rectangle"></div>
-    <img id="my-avatar" src="public/avatar.png" alt="my-avatar">
-    <h2>Adnan Isnain N</h2>
-    <h4 style="margin-top: -15px;">- Web Developer -</h4>
+    <div class="container max-w-none  absolute left-0 top-0">
+        <div class="flex flex-wrap justify-between relative lg:py-5 lg:px-9 py-3 px-3 bg-yellow-300">
+            <div id="homepage">
+                <a href="#" class="w-5 h-5 rounded-full flex justify-center items-center">
+                    <img src="./public/adnan.svg" alt="adnan">
+                </a>
+            </div>
+            <nav id="nav-menu" class="md:block lg:block">
+                <div id="navbar" class="flex flex-wrap">
+                    <img class="md:hidden lg:hidden" src="./public/hamburger.svg" width="20" height="20"
+                        alt="hamburger">
+                    <ul class="hidden md:flex lg:flex">
+                        <li class="group px-3"> <a href="">About</a></li>
+                        <li class="group px-3"> <a href="">Find Me</a></li>
+                        <li class="group px-3"> <a href="">Others</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <section id="home">
+        <div class="container max-w-none p-10 mt-16">
+            <div class="flex flex-wrap">
+                <div class="w-full self-center px-4 md:w-1/2 lg:w-1/2 mb-5">
+                    <img src="./public/avatar.png" alt="adnan-isnain" class="max-w-full mx-auto">
+                </div>
+                <div class="w-full self-center px-4 md:w-1/2 lg:w-1/2 md:right-0 lg:right-0 text-center">
+                    <h1 class="font-semibold text-red-500 text-lg md:text-4xl lg:text-5xl">Adnan Isnain N</h1>
+                    <h2 class="font-medium text-gray-600 mb-6 md:text-xl lg:text-3xl">Web Developer</h2>
+
+                    <a href="#"
+                        class="mx-auto text-base font-semibold text-white bg-red-500 px-8 py-3 rounded-full hover:shadow-lg hover:bg-red-400">Call
+                        me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container max-w-none ">
+            <div class="flex flex-wrap">
+                <!-- <div class="w-full px-4 mb-10 mt-10">
+                    
+                </div> -->
+                <div id="my-contact" class="lg:text-2xl lg:w-1/3 px-5 lg:p-10 mb-5">
+                    <h4 class="font-bold uppercase text-red-500 text-lg md:text-xl lg:text-2xl">Contact
+                    </h4>
+                    <p class="text-base align-middle"><span class="font-bold">Name:</span> adnan.isnain@gmail.com</p>
+                    <p class="text-base"><span class="font-bold">No.Hp :</span> (+62) 813-8088-8012</p>
+                </div>
+                <!-- </div>
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 mb-10"> -->
+                <div id="professional-exp" class="lg:text-2xl lg:w-2/3 px-5 lg:p-10 mb-10 lg:mb-0">
+                    <h4 class="font-bold uppercase text-red-500 text-lg md:text-xl lg:text-2xl">Professional
+                        Experiences</h4>
+                    <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, consectetur! Fuga ab
+                        cupiditate
+                        placeat debitis corporis.</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <div class="w-full lg:px-0">
+            <div class="flex flex-wrap items-center justify-center bg-yellow-300 p-10">
+                <a href="https://github.com/Adnan-Isnain" target="_blank"
+                    class="w-9 h-9 mr-2 rounded-full flex justify-center items-center">
+                    <img src="./public/github.svg" alt="github">
+                </a>
+                <a href="https://adnan-isnain.netlify.app" target="_blank"
+                    class="w-9 h-9 mr-2 rounded-full flex justify-center items-center ">
+                    <img src="./public/netlify.svg" alt="netlify">
+                </a>
+                <a href="https://www.instagram.com/adnan.isnain/" target="_blank"
+                    class="w-9 h-9 mr-2 rounded-full flex justify-center items-center ">
+                    <img src="./public/instagram.svg" alt="instagram">
+                </a>
+                <a href="https://www.instagram.com/adnan.isnain/" target="_blank"
+                    class="w-9 h-9 mr-2 rounded-full flex justify-center items-center ">
+                    <img src="./public/linkedin.svg" alt="linkedin">
+                </a>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
